@@ -1,0 +1,41 @@
+.section-detail {
+  padding: 3.0625rem 1.5rem 0;
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.8156rem;
+    color: #000000;
+  }
+  .tab-buttons {
+    display: flex;
+    background-color: #00000007;
+    border-radius: 6.25rem;
+    width: fit-content;
+    padding: 0.3125rem;
+    margin: 22px auto 12px;
+    li {
+      list-style: none;
+      a {
+        text-decoration: none;
+        width: 9.0625rem;
+        height: 2.1875rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.9375rem;
+        font-weight: 500;
+        line-height: 1.5625rem;
+        color: #9b9b9b;
+        border-radius: 6.25rem;
+      }
+      .active-tab {
+        color: #024e99;
+        background-color: white;
+        box-shadow: 0 5px 20px 0 #0000001a;
+      }
+    }
+  }
+  .events-listing {
+    height: calc(100vh - 230px);
+  }
+}

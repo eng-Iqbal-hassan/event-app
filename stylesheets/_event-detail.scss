@@ -1,0 +1,202 @@
+.detail-wrapper {
+  position: relative;
+  margin-bottom: 1.5rem;
+  .detail-heading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 0.8125rem;
+    padding: 3rem 0 1.25rem 1.5rem;
+    width: 100%;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.2)
+    );
+    img {
+      width: 1.375rem;
+      height: 1.375rem;
+    }
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 1.8rem;
+      color: #ffffff;
+    }
+  }
+  > img {
+    width: 100vw;
+    height: 15.25rem;
+    border-radius: 0 0 1.5rem 1.5rem;
+  }
+}
+.category-detail {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  margin-bottom: 1.625rem;
+  .category {
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      line-height: 1.5125rem;
+      color: #000000;
+    }
+    p {
+      font-size: 0.75rem;
+      font-weight: 400;
+      line-height: 2.125rem;
+      color: #000000;
+      span {
+        font-weight: 600;
+        color: #024e99;
+      }
+    }
+  }
+  .button-wrapper {
+    display: flex;
+    gap: 0.75rem;
+    button {
+      width: 2.25rem;
+      height: 2.25rem;
+      background-color: #024e9933;
+      border: none;
+      border-radius: 0.625rem;
+    }
+  }
+}
+.event-information-listing {
+  padding: 0 1.5rem;
+  margin-bottom: 1.875rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  .event-information {
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
+    .image-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 3rem;
+      height: 2.875rem;
+      border-radius: 0.75rem;
+      background-color: #024e991a;
+    }
+    .information-detail {
+      h4 {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.21rem;
+        color: #000000;
+        margin-bottom: 0.5rem;
+      }
+      p {
+        font-size: 0.75rem;
+        font-weight: 400;
+        line-height: 0.9075rem;
+        color: #747688;
+      }
+    }
+  }
+}
+.event-dates-container {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+  h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 0.875rem;
+    color: #000000;
+    margin-bottom: 1rem;
+  }
+  .tab-buttons {
+    display: flex;
+    gap: 0.75rem;
+    width: 100%;
+    overflow-x: hidden;
+    li {
+      list-style: none;
+      a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        width: 8.625rem;
+        height: 2.125rem;
+        border: 1px solid #00000059;
+        border-radius: 4px;
+        p {
+          font-size: 0.75rem;
+          font-weight: 600;
+          line-height: 1rem;
+          color: #000000;
+        }
+        span {
+          font-size: 0.75rem;
+          font-family: 400;
+          line-height: 0.75rem;
+          color: #000000;
+        }
+      }
+      .active-tab {
+        background-color: #024e99;
+        border: none;
+        p {
+          color: #ffffff;
+        }
+        span {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  .schedule-less {
+    height: 2.75rem;
+    display: none;
+    p {
+      font-size: 0.9375rem;
+      font-weight: 400;
+      line-height: 1.5625rem;
+      color: #000000;
+    }
+  }
+}
+.event-description {
+  padding: 0 1.5rem;
+  margin-bottom: 1.5rem;
+  h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 2.125rem;
+    color: #000000;
+  }
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    margin-bottom: #747688;
+  }
+}
+.event-map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 19.25rem;
+  height: 3.125rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.0588rem;
+  color: #ffffff;
+  background-color: #024e99;
+  border: none;
+  border-radius: 0.75rem;
+  margin: 0 auto;
+}
