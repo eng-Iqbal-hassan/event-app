@@ -16,28 +16,32 @@
   box-shadow: 0 8px 30px 0 rgba(80, 85, 136, 0.0588235294);
   border-radius: 1.125rem;
 }
-.event-slider-wrapper .event-slider .event-slide > img {
+.event-slider-wrapper .event-slider .event-slide a {
+  text-decoration: none;
+  display: block;
+}
+.event-slider-wrapper .event-slider .event-slide a > img {
   width: 13.5625rem;
   height: 131px;
   border-radius: 0.625rem;
 }
-.event-slider-wrapper .event-slider .event-slide .schedule {
+.event-slider-wrapper .event-slider .event-slide a .schedule {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0.3125rem 0;
 }
-.event-slider-wrapper .event-slider .event-slide .schedule p {
+.event-slider-wrapper .event-slider .event-slide a .schedule p {
   font-size: 0.75rem;
   font-weight: 500;
   line-height: 0.9075rem;
   color: #024e99;
 }
-.event-slider-wrapper .event-slider .event-slide .schedule img {
+.event-slider-wrapper .event-slider .event-slide a .schedule img {
   width: 1rem;
   height: 1rem;
 }
-.event-slider-wrapper .event-slider .event-slide h3 {
+.event-slider-wrapper .event-slider .event-slide a h3 {
   font-size: 1.125rem;
   font-weight: 600;
   line-height: 1.3613rem;
@@ -48,16 +52,16 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.event-slider-wrapper .event-slider .event-slide .location {
+.event-slider-wrapper .event-slider .event-slide a .location {
   display: flex;
   gap: 0.3125rem;
   align-items: center;
 }
-.event-slider-wrapper .event-slider .event-slide .location img {
+.event-slider-wrapper .event-slider .event-slide a .location img {
   width: 1rem;
   height: 1rem;
 }
-.event-slider-wrapper .event-slider .event-slide .location span {
+.event-slider-wrapper .event-slider .event-slide a .location span {
   font-size: 0.8125rem;
   font-weight: 400;
   line-height: 0.9831rem;
@@ -164,14 +168,17 @@ main {
   height: 1.4375rem;
 }
 .hero-section .tabs-listing {
+  position: absolute;
+  bottom: -16px;
+}
+
+.tabs-listing {
   display: flex;
   gap: 0.75rem;
   width: calc(100vw - 1.5rem);
   overflow-x: hidden;
-  position: absolute;
-  bottom: -16px;
 }
-.hero-section .tabs-listing li {
+.tabs-listing li {
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.0588rem;
@@ -207,12 +214,14 @@ main {
   font-weight: 600;
   line-height: 2.125rem;
 }
-.event-type p {
+.event-type a {
+  text-decoration: none;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.4375rem;
+  color: #716e90;
 }
-.event-type p img {
+.event-type a img {
   width: 0.375rem;
   height: 0.5625rem;
 }
@@ -224,38 +233,42 @@ main {
   overflow-y: scroll;
 }
 .events-listing .event {
+  list-style: none;
+}
+.events-listing .event a {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.75rem;
   box-shadow: 0 10px 35px 0 rgba(87, 92, 138, 0.0588235294);
   border-radius: 1rem;
+  text-decoration: none;
 }
-.events-listing .event > img {
+.events-listing .event a > img {
   width: 79px;
   height: 64px;
   border-radius: 0.625rem;
 }
-.events-listing .event .event-detail {
+.events-listing .event a .event-detail {
   width: 13.25rem;
 }
-.events-listing .event .event-detail .schedule {
+.events-listing .event a .event-detail .schedule {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 0.3125rem;
 }
-.events-listing .event .event-detail .schedule p {
+.events-listing .event a .event-detail .schedule p {
   font-size: 12px;
   font-weight: 500;
   line-height: 0.9075rem;
   color: #024e99;
 }
-.events-listing .event .event-detail .schedule img {
+.events-listing .event a .event-detail .schedule img {
   width: 1rem;
   height: 1rem;
 }
-.events-listing .event .event-detail h3 {
+.events-listing .event a .event-detail h3 {
   font-size: 15px;
   font-weight: 600;
   line-height: 1.1344rem;
@@ -266,16 +279,16 @@ main {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.events-listing .event .event-detail .location {
+.events-listing .event a .event-detail .location {
   display: flex;
   gap: 0.375rem;
   align-items: center;
 }
-.events-listing .event .event-detail .location img {
+.events-listing .event a .event-detail .location img {
   width: 0.875rem;
   height: 0.875rem;
 }
-.events-listing .event .event-detail .location span {
+.events-listing .event a .event-detail .location span {
   font-size: 0.8125rem;
   font-weight: 400;
   line-height: 0.9831rem;
@@ -308,6 +321,26 @@ main {
 }
 .navigation-listing .active {
   color: #024e99;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6875rem;
+  padding: 3.0625rem 0 1.125rem 1.5rem;
+}
+.nav-item a {
+  text-decoration: none;
+}
+.nav-item a img {
+  width: 1.375rem;
+  height: 22px;
+}
+.nav-item h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.8156rem;
+  color: #000000;
 }
 
 .section-detail {
@@ -594,26 +627,6 @@ main {
   color: #000000;
 }
 
-.notification-header {
-  display: flex;
-  align-items: center;
-  gap: 0.6875rem;
-  padding: 3.0625rem 0 1.125rem 1.5rem;
-}
-.notification-header a {
-  text-decoration: none;
-}
-.notification-header a img {
-  width: 1.375rem;
-  height: 22px;
-}
-.notification-header h1 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  line-height: 1.8156rem;
-  color: #000000;
-}
-
 .notification-listing {
   height: calc(100vh - 10.5rem);
   overflow-y: scroll;
@@ -686,4 +699,50 @@ main {
   line-height: 1.75rem;
   color: #000000;
   text-align: center;
+}
+
+.event-list-container {
+  height: 100vh;
+  overflow-y: scroll;
+}
+.event-list-container .search-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+}
+.event-list-container .search-container .input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 17.1875rem;
+  height: 2.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.1215686275);
+  border-radius: 6px;
+  padding: 0 1rem;
+}
+.event-list-container .search-container .input-wrapper input {
+  border: none;
+  outline: none;
+  width: inherit;
+}
+.event-list-container .search-container .calender-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background-color: rgba(2, 78, 153, 0.1019607843);
+}
+.event-list-container .search-container .calender-wrapper img {
+  width: 1.4375rem;
+  height: 1.4375rem;
+}
+.event-list-container .tabs-listing {
+  position: relative;
+  left: 1.5rem;
+  padding: 1rem 0 1.5rem;
+}
+.event-list-container .events-listing {
+  padding: 0 1.5rem;
 }/*# sourceMappingURL=import.css.map */

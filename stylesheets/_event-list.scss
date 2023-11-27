@@ -1,0 +1,45 @@
+.event-list-container {
+  height: 100vh;
+  overflow-y: scroll;
+  .search-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    .input-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      width: 17.1875rem;
+      height: 2.25rem;
+      border: 1px solid #0000001f;
+      border-radius: 6px;
+      padding: 0 1rem;
+      input {
+        border: none;
+        outline: none;
+        width: inherit;
+      }
+    }
+    .calender-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 2.25rem;
+      height: 2.25rem;
+      border-radius: 50%;
+      background-color: #024e991a;
+      img {
+        width: 1.4375rem;
+        height: 1.4375rem;
+      }
+    }
+  }
+  .tabs-listing {
+    position: relative;
+    left: 1.5rem;
+    padding: 1rem 0 1.5rem;
+  }
+  .events-listing {
+    padding: 0 1.5rem;
+  }
+}

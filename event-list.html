@@ -4,22 +4,49 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="/stylesheets/import.css" />
-    <title>Favourite</title>
+    <title>Document</title>
   </head>
   <body>
     <main>
-      <section class="section-detail">
-        <h1>Favourite</h1>
-        <ul class="tab-buttons">
-          <li><a href="#tab01" class="active-tab">Upcoming</a></li>
-          <li><a href="#tab02">Past Events</a></li>
+      <section class="event-list-container">
+        <div class="nav-item">
+          <a href="/home.html">
+            <img src="/assets/back-arrow-dark.svg" alt="back-arrow-dark" />
+          </a>
+          <h1>Upcoming Events</h1>
+        </div>
+        <div class="search-container">
+          <div class="input-wrapper">
+            <input
+              type="search"
+              name=""
+              id=""
+              placeholder="Search by name area"
+            />
+            <img src="/assets/search-dark.svg" alt="search" />
+          </div>
+          <div class="calender-wrapper">
+            <img src="/assets/Calendar-dark.svg" alt="calender" />
+          </div>
+        </div>
+        <ul class="tabs-listing">
+          <li>
+            <img src="/assets/sports.svg" alt="sports" />
+            Sports
+          </li>
+          <li>
+            <img src="/assets/music.svg" alt="music" />
+            Music
+          </li>
+          <li>
+            <img src="/assets/food.svg" alt="food" />
+            Food
+          </li>
+          <li>
+            <img src="/assets/sports.svg" alt="sports" />
+            Sports
+          </li>
         </ul>
         <ul class="events-listing">
           <li class="event">
@@ -104,32 +131,6 @@
           </li>
         </ul>
       </section>
-      <ul class="navigation-listing">
-        <li class="active">
-          <a href="/home.html">
-            <img src="/assets/home.svg" alt="home" />
-            Home
-          </a>
-        </li>
-        <li>
-          <a href="/map.html">
-            <img src="/assets/Map.svg" alt="map" />
-            Map
-          </a>
-        </li>
-        <li>
-          <a href="/favourite.html">
-            <img src="/assets/love.svg" alt="love" />
-            Favourite
-          </a>
-        </li>
-        <li>
-          <a href="/notification.html">
-            <img src="/assets/notification.svg" alt="notification" />
-            Notification
-          </a>
-        </li>
-      </ul>
     </main>
   </body>
 </html>
