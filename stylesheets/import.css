@@ -318,9 +318,15 @@ main {
   width: 1.4375rem;
   height: 1.4375rem;
   margin-bottom: 3px;
+  color: #200e32;
+  opacity: 20%;
 }
-.navigation-listing .active {
+.navigation-listing li .active {
   color: #024e99;
+}
+.navigation-listing li .active img {
+  color: red !important;
+  opacity: 1;
 }
 
 .nav-item {

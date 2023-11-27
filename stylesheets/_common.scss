@@ -239,11 +239,17 @@ main {
         width: 1.4375rem;
         height: 1.4375rem;
         margin-bottom: 3px;
+        color: #200e32;
+        opacity: 20%;
       }
     }
-  }
-  .active {
-    color: #024e99;
+    .active {
+      color: #024e99;
+      img {
+        color: red !important;
+        opacity: 1;
+      }
+    }
   }
 }
 .nav-item {
