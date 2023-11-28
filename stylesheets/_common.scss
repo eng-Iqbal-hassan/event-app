@@ -88,7 +88,17 @@ main {
         height: 2.25rem;
         border-radius: 50%;
         background-color: #ffffff1a;
-        // border: 1px solid #ffffff;
+        position: relative;
+        &::after {
+          position: absolute;
+          content: "";
+          background-image: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0 8 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='4' cy='4' r='4' fill='%23F2583E'/%3E%3Cpath d='M3.54399 4.42719C3.78971 4.18147 4.01634 3.95484 4.24297 3.72582C4.55548 3.41331 4.86799 3.09841 5.18289 2.7859C5.39521 2.57597 5.73635 2.65469 5.82223 2.93381C5.86517 3.07456 5.83654 3.20576 5.73158 3.31312C5.62184 3.42762 5.50972 3.53736 5.39759 3.6471C4.88946 4.15523 4.37895 4.66575 3.87082 5.17388C3.6585 5.38619 3.45334 5.38619 3.2434 5.17626C2.94759 4.88045 2.64939 4.58464 2.35358 4.28644C2.21044 4.14092 2.18182 3.95484 2.27963 3.79978C2.41083 3.58746 2.69233 3.55406 2.87841 3.73537C3.08357 3.93337 3.28396 4.13853 3.48435 4.34131C3.50821 4.36516 3.5249 4.39617 3.54399 4.42719Z' fill='white'/%3E%3C/svg%3E%0A");
+          width: 0.5rem;
+          height: 0.5rem;
+          border-radius: 50%;
+          top: 0.6875rem;
+          right: 0.375rem;
+        }
         img {
           width: 1.4375rem;
           height: 1.4375rem;
@@ -224,6 +234,9 @@ main {
   justify-content: space-between;
   padding: 1rem 1.875rem;
   box-shadow: 0 -3px 8px 0 #9db2d621;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   li {
     list-style: none;
     a {
