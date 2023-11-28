@@ -237,6 +237,8 @@ main {
   position: absolute;
   bottom: 0;
   width: 100%;
+  z-index: 100;
+  background-color: #ffffff;
   li {
     list-style: none;
     a {
