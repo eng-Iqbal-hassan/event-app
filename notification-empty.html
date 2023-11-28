@@ -4,150 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="/stylesheets/import.css" />
     <title>Document</title>
   </head>
   <body>
     <main>
-      <section class="hero-section">
-        <div class="header">
-          <div class="nav-bar">
-            <h4>Logo Name</h4>
-            <div class="logout-wrapper">
-              <img src="/assets/Logout-icon.svg" alt="logout-icon" />
-            </div>
-          </div>
-          <div class="search-container">
-            <div class="input-wrapper">
-              <input
-                type="search"
-                name="search"
-                id="search"
-                placeholder="Search by name or area"
-              />
-              <img src="/assets/search.svg" alt="search-icon" />
-            </div>
-            <div class="calender-wrapper">
-              <img src="/assets/Calendar.svg" alt="Calendar" />
-            </div>
-          </div>
+      <section>
+        <div class="nav-item" style="padding-bottom: 0">
+          <a href="/home.html">
+            <img src="/assets/back-arrow-dark.svg" alt="back-arrow-dark" />
+          </a>
+          <h1>Notifications</h1>
         </div>
-        <ul class="tabs-listing">
-          <li>
-            <img src="/assets/sports.svg" alt="sports" />
-            Sports
-          </li>
-          <li>
-            <img src="/assets/music.svg" alt="music" />
-            Music
-          </li>
-          <li>
-            <img src="/assets/food.svg" alt="food" />
-            Food
-          </li>
-          <li>
-            <img src="/assets/sports.svg" alt="sports" />
-            Sports
-          </li>
-        </ul>
-      </section>
-      <section class="event-detail-container">
-        <div class="events">
-          <div class="event-type">
-            <h2>Upcoming Events</h2>
-            <a href="/event-list.html">
-              See All
-              <img src="/assets/see-all-toggle-icon.svg" alt="see-all-icon" />
-            </a>
+        <div class="empty-notification-container">
+          <div class="image-wrapper">
+            <img
+              src="/assets/empty-notification-bell.svg"
+              alt="empty-notification-bell"
+            />
+            <div>0</div>
           </div>
-          <ul class="events-listing">
-            <li class="event">
-              <a href="/event-detail.html">
-                <img src="/assets/event.png" alt="event" />
-                <div class="event-detail">
-                  <div class="schedule">
-                    <p>18 Apr, 2023 • 5:30 PM</p>
-                    <img src="/assets/Favorite-Icon.svg" alt="Favorite-Icon" />
-                  </div>
-                  <h3>Jo Malone London’s Jazz...</h3>
-                  <div class="location">
-                    <img src="/assets/location.svg" alt="location" />
-                    <span>Radius Gallery • Santa Cruz, CA </span>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="event">
-              <a href="/event-detail.html">
-                <img src="/assets/event.png" alt="event" />
-                <div class="event-detail">
-                  <div class="schedule">
-                    <p>18 Apr, 2023 • 5:30 PM</p>
-                    <img src="/assets/Favorite-Icon.svg" alt="Favorite-Icon" />
-                  </div>
-                  <h3>Jo Malone London’s Jazz...</h3>
-                  <div class="location">
-                    <img src="/assets/location.svg" alt="location" />
-                    <span>Radius Gallery • Santa Cruz, CA </span>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="event">
-              <a href="/event-detail.html">
-                <img src="/assets/event.png" alt="event" />
-                <div class="event-detail">
-                  <div class="schedule">
-                    <p>18 Apr, 2023 • 5:30 PM</p>
-                    <img src="/assets/Favorite-Icon.svg" alt="Favorite-Icon" />
-                  </div>
-                  <h3>Jo Malone London’s Jazz...</h3>
-                  <div class="location">
-                    <img src="/assets/location.svg" alt="location" />
-                    <span>Radius Gallery • Santa Cruz, CA </span>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="event">
-              <a href="/event-detail.html">
-                <img src="/assets/event.png" alt="event" />
-                <div class="event-detail">
-                  <div class="schedule">
-                    <p>18 Apr, 2023 • 5:30 PM</p>
-                    <img src="/assets/Favorite-Icon.svg" alt="Favorite-Icon" />
-                  </div>
-                  <h3>Jo Malone London’s Jazz...</h3>
-                  <div class="location">
-                    <img src="/assets/location.svg" alt="location" />
-                    <span>Radius Gallery • Santa Cruz, CA </span>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="event">
-              <a href="/event-detail.html">
-                <img src="/assets/event.png" alt="event" />
-                <div class="event-detail">
-                  <div class="schedule">
-                    <p>18 Apr, 2023 • 5:30 PM</p>
-                    <img src="/assets/Favorite-Icon.svg" alt="Favorite-Icon" />
-                  </div>
-                  <h3>Jo Malone London’s Jazz...</h3>
-                  <div class="location">
-                    <img src="/assets/location.svg" alt="location" />
-                    <span>Radius Gallery • Santa Cruz, CA </span>
-                  </div>
-                </div>
-              </a>
-            </li>
-          </ul>
+          <h3>No Notifications!</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
+            eiusmod tempor
+          </p>
         </div>
       </section>
       <ul class="navigation-listing">

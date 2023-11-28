@@ -1,0 +1,40 @@
+.notification-listing {
+  height: calc(100vh - 10.5rem);
+  overflow-y: scroll;
+  .notification {
+    list-style: none;
+    a {
+      text-decoration: none;
+      display: flex;
+      gap: 0.875rem;
+      position: relative;
+      padding: 0.8125rem 1.5rem 0.625rem;
+      min-height: 4.375rem;
+      border-bottom: 1px solid #00000014;
+      &:hover {
+        background-color: #024e991a;
+        box-shadow: 0 10px 35px 0 #575c8a0f;
+      }
+      img {
+        width: 2.8125rem;
+        height: 2.8125rem;
+        border-radius: 50%;
+      }
+      p {
+        font-size: 0.75rem;
+        font-weight: 500;
+        line-height: 1.4375rem;
+        color: #000000;
+      }
+      span {
+        position: absolute;
+        font-size: 0.625rem;
+        font-weight: 500;
+        line-height: 1.25rem;
+        color: #00000080;
+        bottom: 0.625rem;
+        right: 1.5rem;
+      }
+    }
+  }
+}
